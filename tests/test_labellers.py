@@ -14,7 +14,8 @@ from exercises.c_labellers.dates import (
     label_weekend,
     is_belgian_holiday,
     label_holidays,
-    label_holidays2
+    label_holidays2,
+    label_holidays3
 )
 from tests.comparers import assert_frames_functionally_equivalent
 
@@ -67,7 +68,7 @@ def test_label_holidays():
     )
 
     #result = label_holidays2(input)
-    result = label_holidays(input)
+    result = label_holidays3(input)
 
     expected = spark.createDataFrame(
         [
